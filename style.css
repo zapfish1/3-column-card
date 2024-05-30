@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center center;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+  --color-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --color-background: hsl(0, 0%, 95%);
+}
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--color-background);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main {
+  width: 20rem;
+  display: grid;
+}
+
+.sedan,
+.suv,
+.luxury {
+  padding: 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+h1 {
+  color: var(--color-background);
+}
+
+p {
+  color: var(--color-paragraphs);
+}
+
+button {
+  background-color: var(--color-background);
+  padding: 0.7rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  width: fit-content;
+  border-radius: 5rem;
+
+  font-weight: 500;
+}
+
+.sedan {
+  background-color: var(--color-bright-orange);
+}
+
+.sedan button {
+  color: var(--color-bright-orange);
+}
+
+.suv {
+  background-color: var(--color-dark-cyan);
+}
+
+.suv button {
+  color: var(--color-dark-cyan);
+}
+
+.luxury {
+  background-color: var(--color-very-dark-cyan);
+}
+
+.luxury button {
+  color: var(--color-very-dark-cyan);
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--color-background);
+  outline: 2px solid var(--color-background);
+}
+
+button:focus {
+  background-color: transparent;
+  color: var(--color-background);
+  outline: 2px solid var(--color-background);
+}
+
+@media screen and (min-width: 650px) {
+  main {
+    display: flex;
+    width: 60rem;
+  }
+  button {
+    margin-top: 4rem;
+  }
+}
